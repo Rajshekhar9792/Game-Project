@@ -53,3 +53,70 @@ img{
     border-radius: 5px;
     background-color: rgb(234, 0, 255);
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .choices {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+    img {
+        height: 100px;
+        width: 100px;
+    }
+    .score-board {
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    #user-score, #comp-score {
+        font-size: 3rem;
+    }
+    h1 {
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1.5rem;
+    }
+    #msg {
+        margin-top: 3rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .choices {
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .choice {
+        height: 90px;
+        width: 90px;
+    }
+    img {
+        height: 70px;
+        width: 70px;
+    }
+    .score-board {
+        font-size: 1.2rem;
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    #user-score, #comp-score {
+        font-size: 2rem;
+    }
+    h1 {
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1.2rem;
+    }
+    #msg {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+    }
+}
